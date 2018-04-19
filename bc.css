@@ -16,7 +16,6 @@ li a {
 
 .nav{
     background-color: #4CAF50; /* Green */
-    border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -30,6 +29,7 @@ li a {
     position:absolute;
     font-family:quicksand;
     font-size:15px;
+    z-index:2;
 }
 
 .nav {
@@ -71,16 +71,36 @@ li a {
     width:450px;
     height:400px;
     padding:30px;
-    top:20vh;
-    left:20vw;
+    top:10vh;
+    left:15vw;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
     border-radius:20px;
+    z-index:5;
 }
 
 .form{
     margin:10px;
 }
-#pig{
-  z-index:20;  
+#piggy{
+    position:absolute;
+    width:120px;
+    z-index:20; 
+    left:340px;
+}
+
+#howard{
+    cursor: pointer;
+    position:absolute;
+    width:300px;
+    z-index:10;
+    left:35vw;
+    top:60vh;
+    
+}
+
+#clowds{
+    position:absolute;
+    transition: left 10s;
+
 }

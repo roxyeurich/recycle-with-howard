@@ -30,6 +30,7 @@ li a {
     position:absolute;
     font-family:quicksand;
     font-size:15px;
+    z-index:2;
 }
 
 .nav {
@@ -78,6 +79,7 @@ li a {
     left:20vw;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
+    z-index:2;
 }
 
 #baloon2{
@@ -93,4 +95,20 @@ li a {
     top:20vh;
     left:20vw;
     background-color:rgba(255, 255, 255, 0.7);
+    z-index:2;
+}
+
+#howard{
+    cursor: pointer;
+    position:absolute;
+    width:300px;
+    z-index:10;
+    left:35vw;
+    top:50vh;
+    
+}
+
+#clowds{
+    position:absolute;
+    transition: 10s;
 }

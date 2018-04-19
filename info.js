@@ -12,21 +12,18 @@ var howard = document.getElementById("Howard"),
 
 howard.addEventListener("click", function(){
    baloon3.style.display = "block"; 
-});
+    forward.style.display = "block";
+});    
 
-baloon3.addEventListener("click", function(){
-   baloon3.style.display = "none"; 
+    
+forward.addEventListener("click", function(){
+   if (baloon3.style.display == "block"){
+          baloon3.style.display = "none"; 
     bananaInfo.style.display = "block";
     back.style.display = "block";
     forward.style.display = "block";
     bgItems.style.display = "block";
-});
-    
-    
-
-    
-forward.addEventListener("click", function(){
-   if(bananaInfo.style.display == "block"){
+   } else if(bananaInfo.style.display == "block"){
        bananaInfo.style.display = "none";
        paperInfo.style.display = "block";
    } else if (paperInfo.style.display == "block"){
