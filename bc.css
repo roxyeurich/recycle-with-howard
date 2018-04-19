@@ -1,0 +1,86 @@
+FirstPage{
+    max-width: 768px;
+    max-height: 959px;
+}
+
+/*NAV BAR*/
+
+li {
+    list-style-type: none;
+
+} 
+
+li a {
+    display: block;
+}
+
+.nav{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position:absolute;
+    font-family:quicksand;
+    font-size:15px;
+}
+
+.nav {
+    background-color: rgba(50, 141, 78, 0.3); 
+    color: black; 
+    border: 2px solid #358339;
+}
+
+.nav:hover {
+    background-color: #76d379;
+    color: white;
+}
+
+#homeB{
+    left:22%;
+    top:3%;
+}
+
+#infoB{
+    left:39%;
+    top:3%;
+}
+
+#gameB{
+    left:53%;
+    top:3%;
+}
+
+#bcB{
+    left:70%;
+    top:3%;
+}
+
+#baloon6{
+    font-family:quicksand;
+    font-size:15px;
+    position:absolute;
+    display:block;
+    width:450px;
+    height:400px;
+    padding:30px;
+    top:20vh;
+    left:20vw;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    border-radius:20px;
+}
+
+.form{
+    margin:10px;
+}
+#pig{
+  z-index:20;  
+}
