@@ -78,13 +78,44 @@ li a {
     left:20vw;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
+    z-index:15;
+}
+
+#baloonAlert{
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:15px;
+    position:absolute;
+    display:none;
+    width:380px;
+    height:40px;
+    padding:30px;
+    top:20vh;
+    left:20vw;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    z-index:15;
+}
+
+#myreset{
+    position:absolute;
+    top:50vh;
+    left:50px;
+    padding:10px;
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:12px;
+    background-color:rgba(255, 255, 255, 0.5);
+    z-index:16;
 }
 
 
 #howard{
     cursor: pointer;
     position:absolute;
-    width:300px;
+    width:200px;
     z-index:10;
     left:35vw;
     top:50vh;
@@ -93,7 +124,70 @@ li a {
 
 #clowds{
     position:absolute;
-    transition: 15s;
+    left:0px;
 
 }
 
+#cursorChange{
+    width:50px;
+    height: 50px;
+    position:fixed;
+    z-index:12;
+    margin:5px;
+    display:none;
+    
+}
+
+.bins{
+    position:absolute;
+    width:100px;
+    top:83vh;
+    z-index:17;
+}
+
+#redBin{
+    left:10vw;
+}
+
+#greenBin{
+    left:30vw;
+}
+
+#yellowBin{
+    left:50vw;
+}
+
+#blueBin{
+    left:70vw;
+}
+
+.items{
+    position:absolute;
+    top:70vh;
+    z-index:12;
+}
+
+#paper{
+    left:10vw;
+    width:30px;
+}
+
+#bottle{
+    left:30vw;
+    width:60px;
+}
+
+#jam{
+    left:50vw;
+    width:50px;
+}
+
+#banana{
+    left:70vw;
+    width:30px;
+}
+
+#box{
+    left:90vw;
+    width:70px;
+}

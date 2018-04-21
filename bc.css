@@ -32,6 +32,19 @@ li a {
     z-index:2;
 }
 
+
+#mysubmit{
+    position:absolute;
+    top:50vh;
+    left:50px;
+    padding:10px;
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:12px;
+    background-color:rgba(255, 255, 255, 0.5);
+    z-index:16;
+}
 .nav {
     background-color: rgba(50, 141, 78, 0.3); 
     color: black; 
@@ -84,6 +97,7 @@ li a {
 }
 #piggy{
     position:absolute;
+    top:45vh;
     width:120px;
     z-index:20; 
     left:340px;
@@ -96,7 +110,6 @@ li a {
     z-index:10;
     left:35vw;
     top:60vh;
-    
 }
 
 #clowds{

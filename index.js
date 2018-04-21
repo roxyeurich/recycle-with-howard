@@ -20,13 +20,12 @@ baloon2.addEventListener("click", function(){
 
 
 //clowds
-clowds.addEventListener("mouseenter", function(){
-    function float(){
-clowds.style.left = "0%";
-    
-setTimeout(function(){
-   clowds.style.left = "100%";
-}, 50); 
+var num =-100;
+
+setInterval(function(){
+    clowds.style.left = num+"%";
+    num=num+0.2;
+    if(num>100){
+        num = -100;
     }
-    setInterval(float, 300);
-});
+},30);
