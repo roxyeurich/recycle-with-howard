@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="bc.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <title>Recycle with Howard</title>
     </head>
     
@@ -16,25 +17,49 @@
         
     <div id="baloon6">
         <div id="bprices">
-            What type of product? 
+            Bottle Calculator - Bottle Type / Quantity
+            <br><br><hr><br>
             
-            <select id="prices">
-              <option value="p2l" name="selectedbottle">Plastic 2L($0.20)</option>
-              <option value="p1l" name="selectedbottle">Plastic 1L($0.15)</option>
-              <option value="cans" name="selectedbottle">Cans($0.10)</option>
-              <option value="g2l" name="selectedbottle">Glass 2L($0.30)</option>
-              <option value="g1l" name="selectedbottle">Glass 1L($0.25)</option>
-            </select>
-            
-            <br><br>
-            How many?
-            <input class="form" id="quantity" type="number" min="1" max="5"/>
+            <div>
+            Plastic 2L($0.20)
+            <input class="myInputs" id="p2l" type="number" min="0" max="10"/>
+            </div>
+            <br>
+              
+            <div>
+            Plastic 1L($0.15)
+            <input class="myInputs" id="p1l" type="number" min="0" max="10"/>
+            </div>
+            <br>
+             
+              
+          <div>
+          Cans($0.10)
+          <input class="myInputs" id="cans" type="number" min="0" max="10"/>
+          </div>
+          <br>
+
+
+          <div>
+          Glass 2L($0.30)
+          <input class="myInputs" id="g2l" type="number" min="0" max="10"/>
+          </div>
+          <br>
+
+
+          <div>
+          Glass 1L($0.25)
+          <input class="myInputs" id="g1l" type="number" min="0" max="10"/>
+          </div>
+           
             
             <br><br><br>
             <button id="mysubmit">Submit</button>
             
             <br><br><br>
-             <div id="totalPrice"></div>
+             <div>
+                 Total: $<input type="text" id="totalPrice" readonly/>
+             </div>
             
             
             <img src="svgs/pig.svg" id="piggy"/>

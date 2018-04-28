@@ -32,10 +32,19 @@ li a {
     z-index:2;
 }
 
+input{
+    border-radius: 0;
+    color: rgb(37, 65, 28);
+    display: inline-block;
+    font-family: quicksand;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
 
 #mysubmit{
     position:absolute;
-    top:50vh;
+    top:40vh;
     left:50px;
     padding:10px;
     border-radius:20px;
@@ -92,6 +101,12 @@ li a {
     z-index:5;
 }
 
+#totalPrice{
+    width:100px;
+    height:20px;
+
+}
+
 .form{
     margin:10px;
 }
@@ -101,6 +116,7 @@ li a {
     width:120px;
     z-index:20; 
     left:340px;
+    transition:0.3s;
 }
 
 #howard{
@@ -117,3 +133,4 @@ li a {
     transition: left 10s;
 
 }
+

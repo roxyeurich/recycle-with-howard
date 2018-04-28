@@ -12,7 +12,8 @@ var howard = document.getElementById("howard"),
     blueBin = document.getElementById("blueBin"),
     yellowBin = document.getElementById("yellowBin"),
     cursor = document.getElementById("cursorChange"),
-    myreset = document.getElementById("myreset");
+    myreset = document.getElementById("myreset"),
+    points = document.getElementById("points");
 
 //reset
 myreset.addEventListener("click", function(){
