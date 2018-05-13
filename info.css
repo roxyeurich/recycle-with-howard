@@ -1,8 +1,16 @@
-InfoPage{
+FirstPage{
     max-width: 768px;
     max-height: 959px;
 }
 
+
+
+#logo{
+    width:150px;
+    position:absolute;
+    margin:10px;
+    z-index:10;
+}
 
 /*NAV BAR*/
 
@@ -16,9 +24,9 @@ li a {
 }
 
 .nav{
-    background-color: #4CAF50; /* Green */
     border: none;
-    color: white;
+    color: #ffffff;
+    font-weight:400;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -34,37 +42,130 @@ li a {
     z-index:2;
 }
 
-.nav {
-    background-color: rgba(50, 141, 78, 0.3); 
-    color: black; 
-    border: 2px solid #358339;
-}
+
 
 .nav:hover {
-    background-color: #76d379;
-    color: white;
+    color: lightgray;
 }
 
+.signs{
+    width:130px;
+    height:auto;
+    position:absolute;
+    z-index:4;
+}
 
 #homeB{
-    left:22%;
-    top:3%;
+    left:23.5%;
+    top:11%;
+    z-index:5;
+}
+
+#sign1{
+    left:20.7%;
 }
 
 #infoB{
     left:39%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign2{
+    left:35.4%;
 }
 
 #gameB{
     left:53%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign3{
+    left:50.3%;
 }
 
 #bcB{
-    left:70%;
-    top:3%;
+    left:68%;
+    top:10%;
+    z-index:5;
 }
+
+#sign4{
+    left:65.6%;
+
+}
+
+#infoBox{
+    width:100vw;
+    height:50vh;
+    position:absolute;
+    margin:auto;
+}
+
+#forward{
+    z-index:21;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    left: 90vw;
+    position:absolute;
+    top:25vh;
+    display:none;
+}
+
+#back{
+    z-index:21;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    left:5vw;
+    position:absolute;
+    top:25vh;
+    display:none;
+    
+}
+
+
+
+.infos{
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:15px;
+    position:absolute;
+    text-align:center;
+    display:none;
+    width:450px;
+    height:70px;
+    padding:40px;
+    top:20vh;
+    left:0px;
+    right:0px;
+    margin:auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    z-index:5; 
+}
+
+.items{
+    width:70px;
+    height:auto;
+    position:absolute;
+    left:30px;
+}
+
+.bins{
+    width:70px;
+    height:auto;
+    position:absolute;
+    left:430px;
+    top:15px;
+}
+
+
 #baloon3{
     border-radius:20px;
     cursor: pointer;
@@ -76,7 +177,9 @@ li a {
     height:70px;
     padding:40px;
     top:20vh;
-    left:20vw;
+    left:0px;
+    right:0px;
+    margin:auto;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
     z-index:5;
@@ -93,33 +196,25 @@ li a {
     height:150px;
     padding:40px;
     top:20vh;
-    left:20vw;
+    left:0px;
+    right:0px;
+    margin:auto;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
     z-index:5;
 }
 
 
-#bananaInfo, #jamInfo, #paperInfo, #pizzaInfo, #bottleInfo, #bgItems, #back, #forward {
-    top:50px;
-    display:none;
-}
-
-#howard{
-   cursor: pointer;
-}
-
-#forward, #back {
-    cursor: pointer;
-}
 
 #howard{
     cursor: pointer;
     position:absolute;
-    width:300px;
+    width:400px;
     z-index:10;
-    left:35vw;
-    top:40vh;
+    top:55vh;
+    left:0px;
+    right:0px;
+    margin:auto;
     
 }
 

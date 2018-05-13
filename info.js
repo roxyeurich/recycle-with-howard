@@ -1,15 +1,28 @@
-var howard = document.getElementById("Howard"),
-    bananaInfo = document.getElementById("bananaInfo"),
-    jamInfo = document.getElementById("jamInfo"),
-    paperInfo = document.getElementById("paperInfo"),
-    pizzaInfo = document.getElementById("pizzaInfo"),
-    bottleInfo = document.getElementById("bottleInfo"),
+var howard = document.getElementById("howard"),
+    info1 = document.getElementById("info1"),
+    info2 = document.getElementById("info2"),
+    info3 = document.getElementById("info3"),
+    info4 = document.getElementById("info4"),
+    info4 = document.getElementById("info4"),
+    info5 = document.getElementById("info5"),
     back = document.getElementById("back"),
     forward = document.getElementById("forward"),
     baloon4 = document.getElementById("baloon4"),
     bgItems = document.getElementById("bgItems");
 
+//clowds
+var num =-100;
 
+setInterval(function(){
+    clowds.style.left = num+"%";
+    num=num+0.2;
+    if(num>100){
+        num = -100;
+    }
+},30);
+
+
+//info baloons
 howard.addEventListener("click", function(){
    baloon3.style.display = "block"; 
     forward.style.display = "block";
@@ -19,52 +32,50 @@ howard.addEventListener("click", function(){
 forward.addEventListener("click", function(){
    if (baloon3.style.display == "block"){
           baloon3.style.display = "none"; 
-    bananaInfo.style.display = "block";
+    info1.style.display = "block";
     back.style.display = "block";
     forward.style.display = "block";
     bgItems.style.display = "block";
-   } else if(bananaInfo.style.display == "block"){
-       bananaInfo.style.display = "none";
-       paperInfo.style.display = "block";
-   } else if (paperInfo.style.display == "block"){
-       paperInfo.style.display = "none";
-       pizzaInfo.style.display = "block";
-   } else if (pizzaInfo.style.display == "block"){
-       pizzaInfo.style.display = "none";
-       bottleInfo.style.display = "block";
-   } else if (bottleInfo.style.display == "block"){
-       bottleInfo.style.display = "none";
-       jamInfo.style.display = "block";
-   } else if (jamInfo.style.display == "block"){
-       jamInfo.style.display = "none";
+   } else if(info1.style.display == "block"){
+       info1.style.display = "none";
+       info2.style.display = "block";
+   } else if (info2.style.display == "block"){
+       info2.style.display = "none";
+       info3.style.display = "block";
+   } else if (info3.style.display == "block"){
+       info3.style.display = "none";
+       info4.style.display = "block";
+   } else if (info4.style.display == "block"){
+       info4.style.display = "none";
+       info5.style.display = "block";
+   } else if (info5.style.display == "block"){
+       info5.style.display = "none";
        baloon4.style.display = "block";
        forward.style.display = "none";
-       bgItems.style.display = "none";
    }
 });
 
 
 back.addEventListener("click", function(){
-   if(paperInfo.style.display == "block"){
-       paperInfo.style.display = "none";
-       bananaInfo.style.display = "block";
-   } else if (bananaInfo.style.display == "block"){
-       bananaInfo.style.display = "none";
-       jamInfo.style.display = "block";
-   } else if (jamInfo.style.display == "block"){
-       jamInfo.style.display = "none";
-       bottleInfo.style.display = "block";
-   } else if (bottleInfo.style.display == "block"){
-       bottleInfo.style.display = "none";
-       pizzaInfo.style.display = "block";
-   } else if (pizzaInfo.style.display == "block"){
-       pizzaInfo.style.display = "none";
-       paperInfo.style.display = "block";
+   if(info5.style.display == "block"){
+       info5.style.display = "none";
+       info4.style.display = "block";
+   } else if (info4.style.display == "block"){
+       info4.style.display = "none";
+       info3.style.display = "block";
+   } else if (info3.style.display == "block"){
+       info3.style.display = "none";
+       info2.style.display = "block";
+   } else if (info2.style.display == "block"){
+       info2.style.display = "none";
+       info1.style.display = "block";
+   } else if (info1.style.display == "block"){
+       info1.style.display = "none";
+       info5.style.display = "block";
    } else if (baloon4.style.display == "block"){
        baloon4.style.display = "none";
-       bananaInfo.style.display = "block";
+       info1.style.display = "block";
        forward.style.display = "block";
-       bgItems.style.display = "block";
    } 
 });
 

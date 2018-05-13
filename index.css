@@ -3,6 +3,15 @@ FirstPage{
     max-height: 959px;
 }
 
+
+
+#logo{
+    width:150px;
+    position:absolute;
+    margin:10px;
+    z-index:10;
+}
+
 /*NAV BAR*/
 
 li {
@@ -15,9 +24,9 @@ li a {
 }
 
 .nav{
-    background-color: #4CAF50; /* Green */
     border: none;
-    color: white;
+    color: #ffffff;
+    font-weight:400;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -33,35 +42,57 @@ li a {
     z-index:2;
 }
 
-.nav {
-    background-color: rgba(50, 141, 78, 0.3); 
-    color: black; 
-    border: 2px solid #358339;
-}
 
 .nav:hover {
-    background-color: #76d379;
-    color: white;
+    color: lightgray;
+}
+
+.signs{
+    width:130px;
+    height:auto;
+    position:absolute;
+    z-index:4;
 }
 
 #homeB{
-    left:22%;
-    top:3%;
+    left:23.5%;
+    top:11%;
+    z-index:5;
+}
+
+#sign1{
+    left:20.7%;
 }
 
 #infoB{
     left:39%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign2{
+    left:35.4%;
 }
 
 #gameB{
     left:53%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign3{
+    left:50.3%;
 }
 
 #bcB{
-    left:70%;
-    top:3%;
+    left:68%;
+    top:10%;
+    z-index:5;
+}
+
+#sign4{
+    left:65.6%;
+
 }
 
 
@@ -73,10 +104,13 @@ li a {
     position:absolute;
     display:none;
     width:300px;
-    height:70px;
+    height:150px;
     padding:40px;
-    top:20vh;
-    left:20vw;
+    top:-20vh;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin:auto;
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
     z-index:2;
@@ -92,23 +126,37 @@ li a {
     width:300px;
     height:40px;
     padding:50px;
-    top:20vh;
-    left:20vw;
+    top:-20vh;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin:auto;
     background-color:rgba(255, 255, 255, 0.7);
     z-index:2;
+}
+
+.ground{
+    width:100vw;
+    height:50vh;
+    position:absolute;
 }
 
 #howard{
     cursor: pointer;
     position:absolute;
-    width:300px;
+    width:500px;
     z-index:10;
-    left:35vw;
     top:50vh;
-    
+    right:0px;
+    left:0px;
+    margin:auto;
 }
 
-#clowds{
+#clowds, #clowds2{
     position:absolute;
     transition: 10s;
+}
+
+#clowd2{
+    left:-200px;
 }

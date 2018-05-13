@@ -58,7 +58,7 @@ function takeItem(el){
 //matching items to bin
 bottle.addEventListener("click", function(){
    takeItem(this);
-    itemName = yellowBin;
+    itemName = blueBin;
 });
 
 box.addEventListener("click", function(){
@@ -68,12 +68,13 @@ box.addEventListener("click", function(){
 
 paper.addEventListener("click", function(){
    takeItem(this);
-    itemName = blueBin;
+    itemName = yellowBin;
 });
 
+//change jam for smt else later
 jam.addEventListener("click", function(){
    takeItem(this);
-    itemName = redBin;
+    itemName = blackBin;
 });
 
 

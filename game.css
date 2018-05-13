@@ -3,6 +3,15 @@ FirstPage{
     max-height: 959px;
 }
 
+
+
+#logo{
+    width:150px;
+    position:absolute;
+    margin:10px;
+    z-index:10;
+}
+
 /*NAV BAR*/
 
 li {
@@ -15,9 +24,9 @@ li a {
 }
 
 .nav{
-    background-color: #4CAF50; /* Green */
     border: none;
-    color: white;
+    color: #ffffff;
+    font-weight:400;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -33,38 +42,62 @@ li a {
     z-index:2;
 }
 
-.nav {
-    background-color: rgba(50, 141, 78, 0.3); 
-    color: black; 
-    border: 2px solid #358339;
-}
+
 
 .nav:hover {
-    background-color: #76d379;
-    color: white;
+    color: lightgray;
+}
+
+.signs{
+    width:130px;
+    height:auto;
+    position:absolute;
+    z-index:4;
 }
 
 #homeB{
-    left:22%;
-    top:3%;
+    left:23.5%;
+    top:11%;
+    z-index:5;
+}
+
+#sign1{
+    left:20.7%;
 }
 
 #infoB{
     left:39%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign2{
+    left:35.4%;
 }
 
 #gameB{
     left:53%;
-    top:3%;
+    top:11%;
+    z-index:5;
+}
+
+#sign3{
+    left:50.3%;
 }
 
 #bcB{
-    left:70%;
-    top:3%;
+    left:68%;
+    top:10%;
+    z-index:5;
+}
+
+#sign4{
+    left:65.6%;
+
 }
 
 #baloon5{
+    cursor: pointer;
     border-radius:20px;
     cursor: pointer;
     font-family:quicksand;
@@ -82,6 +115,7 @@ li a {
 }
 
 #baloonAlert{
+    cursor: pointer;
     border-radius:20px;
     cursor: pointer;
     font-family:quicksand;
@@ -99,6 +133,7 @@ li a {
 }
 
 #myreset{
+    cursor: pointer;
     position:absolute;
     top:50vh;
     left:50px;
@@ -111,14 +146,19 @@ li a {
     z-index:16;
 }
 
+.ground{
+    width:100vw;
+    height:50vh;
+    position:absolute;
+}
 
 #howard{
     cursor: pointer;
     position:absolute;
-    width:200px;
+    width:300px;
     z-index:10;
     left:35vw;
-    top:50vh;
+    top:70vh;
     
 }
 
@@ -139,13 +179,14 @@ li a {
 }
 
 .bins{
+    cursor: pointer;
     position:absolute;
-    width:100px;
-    top:83vh;
+    width:80px;
+    top:110vh;
     z-index:17;
 }
 
-#redBin{
+#blackBin{
     left:10vw;
 }
 
@@ -162,19 +203,20 @@ li a {
 }
 
 .items{
+    cursor: pointer;
     position:absolute;
-    top:70vh;
+    top:97vh;
     z-index:12;
 }
 
 #paper{
-    left:10vw;
-    width:30px;
+    left:20vw;
+    width:40px;
 }
 
 #bottle{
     left:30vw;
-    width:60px;
+    width:70px;
 }
 
 #jam{
@@ -184,10 +226,10 @@ li a {
 
 #banana{
     left:70vw;
-    width:30px;
+    width:50px;
 }
 
 #box{
-    left:90vw;
-    width:70px;
+    left:80vw;
+    width:90px;
 }
