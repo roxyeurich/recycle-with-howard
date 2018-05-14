@@ -1,7 +1,7 @@
 var howard = document.getElementById("howard"),
-    clowds = document.getElementById("clowds"),
-    baloon5 = document.getElementById("baloon5"),
-    baloonAlert = document.getElementById("baloonAlert"),
+    clouds = document.getElementById("clouds"),
+    balloon5 = document.getElementById("balloon5"),
+    balloonAlert = document.getElementById("balloonAlert"),
     banana = document.getElementById("banana"),
     paper = document.getElementById("paper"),
     jam = document.getElementById("jam"),
@@ -14,14 +14,18 @@ var howard = document.getElementById("howard"),
     cursor = document.getElementById("cursorChange"),
     myreset = document.getElementById("myreset"),
     points = document.getElementById("points"),
-    pts = document.getElementById("pts");;
+    pts = document.getElementById("pts"),
+    apple = document.getElementById("apple"),
+    duckling = document.getElementById("duckling"),
+    pen = document.getElementById("pen"),
+    toothpaste = document.getElementById("toothpaste");
 
 
 //intro balloon
-baloon5.style.display = "block";
+balloon5.style.display = "block";
 
-baloon5.addEventListener("click", function(){
-    baloon5.style.display = "none";
+balloon5.addEventListener("click", function(){
+    balloon5.style.display = "none";
 });
 
 //reset
@@ -29,14 +33,14 @@ myreset.addEventListener("click", function(){
     location.reload();
 });
 
-//clowds
+//clouds
 
-//clowds.addEventListener("mouseenter", function(){
+//clouds.addEventListener("mouseenter", function(){
 //    function float(){
 //
 //    
 //setTimeout(function(){
-//   clowds.style.left = "100%";
+//   clouds.style.left = "100%";
 //}, 50); 
 //    }
 //    setInterval(float, 300);
@@ -44,7 +48,7 @@ myreset.addEventListener("click", function(){
 var num =-100;
 
 setInterval(function(){
-    clowds.style.left = num+"%";
+    clouds.style.left = num+"%";
     num=num+0.2;
     if(num>100){
         num = -100;
@@ -69,29 +73,52 @@ function takeItem(el){
 bottle.addEventListener("click", function(){
    takeItem(this);
     itemName = blueBin;
+    bottle.style.display = "none";
+});
+
+toothpaste.addEventListener("click", function(){
+   takeItem(this);
+    itemName = blueBin;
+    toothpaste.style.display = "none";
+}); 
+
+paper.addEventListener("click", function(){
+   takeItem(this);
+    itemName = yellowBin;
+    paper.style.display = "none";
+});
+
+//change jam for smt else later
+duckling.addEventListener("click", function(){
+   takeItem(this);
+    itemName = blackBin;
+    duckling.style.display = "none";
+});
+
+pen.addEventListener("click", function(){
+   takeItem(this);
+    itemName = blackBin;
+    pen.style.display = "none";
+}); 
+
+banana.addEventListener("click", function(){
+   takeItem(this);
+    itemName = greenBin;
+    banana.style.display = "none";
+});
+
+apple.addEventListener("click", function(){
+   takeItem(this);
+    itemName = greenBin;
+    apple.style.display = "none";
 });
 
 box.addEventListener("click", function(){
    takeItem(this);
     itemName = greenBin;
+    box.style.display = "none";
 });
 
-paper.addEventListener("click", function(){
-   takeItem(this);
-    itemName = yellowBin;
-});
-
-//change jam for smt else later
-jam.addEventListener("click", function(){
-   takeItem(this);
-    itemName = blackBin;
-});
-
-
-banana.addEventListener("click", function(){
-   takeItem(this);
-    itemName = greenBin;
-});
 
 document.body.addEventListener("mousemove", function(ev){
         cursor.style.left = ev.pageX-45+"px";
@@ -108,11 +135,15 @@ function pickBin(bname){
         cursor.style.display = "none";
         points++;
         console.log(points);
-        baloonWin.style.display = "block";
+        balloonWin.style.display = "block";
         pts.value = points;
         disposingGarb();
         trashSound.play();
         trashSound.volume = 0.3;
+        if (balloon5.style.display == "block"){
+            balloon5.style.display = "none";  
+        }
+        
         
             function disposingGarb(){    
             bname.style.transform = "scale(1.5)";
@@ -128,18 +159,18 @@ function pickBin(bname){
     }
     
     if (noPts > 5){
-        baloonAlert.style.display = "block";
+        balloonAlert.style.display = "block";
     }
 
 }
 
-//baloonAlert
-baloonAlert.addEventListener("click", function(){
-    baloonAlert.style.display = "none";
+//balloonAlert
+balloonAlert.addEventListener("click", function(){
+    balloonAlert.style.display = "none";
 });
 //pts balloon
-baloonWin.addEventListener("click", function(){
-    baloonWin.style.display = "none";
+balloonWin.addEventListener("click", function(){
+    balloonWin.style.display = "none";
 });
 //clickable bins
 blackBin.addEventListener("click", function(){
@@ -162,174 +193,275 @@ blueBin.addEventListener("click", function(){
 //howard move mouse
 howard.addEventListener("click", function(){
 document.body.addEventListener("mousemove", function(ev){
-        howard.style.left = ev.pageX-120+"px";
-        howard.style.top = ev.pageY-150+"px";  
+        howard.style.left = ev.pageX-130+"px";
+        howard.style.top = ev.pageY-320+"px";  
 });          
 });
     
 
+start.addEventListener("click", function(){
+
+function dropPaper(){
+
+    paper.style.transform = "translateY(1050px)";
+    
+setTimeout(function(){
+    paper.style.transform = "translateY(1050px)";
+}, 500); 
+    }
+    setInterval(dropPaper, 1000);
+    
+    
+    function dropBanana(){
+
+    banana.style.transform = "translateY(960px)";
+    
+setTimeout(function(){
+    banana.style.transform = "translateY(960px)";
+}, 2000); 
+    }
+    setInterval(dropBanana, 7000);
+    
+    function dropBox(){
+
+    box.style.transform = "translateY(1000px)";
+    
+setTimeout(function(){
+    box.style.transform = "translateY(1000px)";
+}, 2000); 
+    }
+    setInterval(dropBox, 10000); 
+    
+    
+    function dropBottle(){
+
+    bottle.style.transform = "translateY(980px)";
+    
+setTimeout(function(){
+    bottle.style.transform = "translateY(980px)";
+}, 2000); 
+    }
+    setInterval(dropBottle, 14000); 
+    
+    
+    function dropPen(){
+
+    pen.style.transform = "translateY(1100px)";
+    
+setTimeout(function(){
+    pen.style.transform = "translateY(1100px)";
+}, 2000); 
+    }
+    setInterval(dropPen, 16000);     
+    
+  
+        function dropDuck(){
+
+    duckling.style.transform = "translateY(1100px)";
+    
+setTimeout(function(){
+    duckling.style.transform = "translateY(1100px)";
+}, 2000); 
+    }
+    setInterval(dropDuck, 18000);  
+    
+
+  
+        function dropApple(){
+
+    apple.style.transform = "translateY(1100px)";
+    
+setTimeout(function(){
+    apple.style.transform = "translateY(1100px)";
+}, 2000); 
+    }
+    setInterval(dropApple, 20000); 
+    
+    
+        function dropTube(){
+
+    toothpaste.style.transform = "translateY(1100px)";
+    
+setTimeout(function(){
+    toothpaste.style.transform = "translateY(1100px)";
+}, 2000); 
+    }
+    setInterval(dropTube, 22000);  
+
+  
+    
+});
+
+
+
 
 // garbage rain
 
-var dispDiv = document.getElementById("wrap"),
-    start = document.getElementById("start"),
-    stop = document.getElementById("stop");
-
-
-function makeItRain(){
-    
-  var candy = document.createElement("img");
-    var mleft = Math.round(Math.random()*100);
-    var mdim = Math.round(Math.random()*40)+10;
-    
-    candy.src = "svgs/paper.svg";
-    candy.className = "candies";
-    candy.style.left = mleft+"%";
-    candy.style.height = mdim+"px";
-    candy.style.width = mdim+"px";
-    
-    dispDiv.appendChild(candy);
-    
-    if(mdim > 40){
-        candy.style.transition = "top 10s";
-    }else if (mdim > 30){
-        candy.style.transition = "top 11s";
-    } else if (mdim > 20){
-        candy.style.transition = "top 12s";
-    }else {
-        candy.style.transition = "top 13s";
-    }
-    
-    setTimeout(function(){
-        candy.style.top = "55%";
-        
-        setTimeout (function(){
-            dispDiv.removeChild(candy);
-        },10000);
-    },10); 
-    
-}
-
-function makeItRainTwice(){
-    
-  var candy = document.createElement("img");
-    var mleft = Math.round(Math.random()*100);
-    var mdim = Math.round(Math.random()*40)+10;
-    
-    candy.src = "svgs/bottle.svg";
-    candy.className = "candies";
-    candy.style.left = mleft+"%";
-    candy.style.height = mdim+"px";
-    candy.style.width = mdim+"px";
-    
-    dispDiv.appendChild(candy);
-    
-    if(mdim > 40){
-        candy.style.transition = "top 14s";
-    }else if (mdim > 30){
-        candy.style.transition = "top 15s";
-    } else if (mdim > 20){
-        candy.style.transition = "top 16s";
-    }else {
-        candy.style.transition = "top 17s";
-    }
-    
-    setTimeout(function(){
-        candy.style.top = "55%";
-        
-        setTimeout (function(){
-            dispDiv.removeChild(candy);
-        },10000);
-    },10); 
-    
-}
-
-function makeItRainTrice(){
-    
-  var candy = document.createElement("img");
-    var mleft = Math.round(Math.random()*100);
-    var mdim = Math.round(Math.random()*40)+10;
-    
-    candy.src = "svgs/banana.svg";
-    candy.className = "candies";
-    candy.style.left = mleft+"%";
-    candy.style.height = mdim+"px";
-    candy.style.width = mdim+"px";
-    
-    dispDiv.appendChild(candy);
-    
-    if(mdim > 40){
-        candy.style.transition = "top 9s";
-    }else if (mdim > 30){
-        candy.style.transition = "top 10s";
-    } else if (mdim > 20){
-        candy.style.transition = "top 11s";
-    }else {
-        candy.style.transition = "top 12s";
-    }
-    
-    setTimeout(function(){
-        candy.style.top = "55%";
-        
-        setTimeout (function(){
-            dispDiv.removeChild(candy);
-        },10000);
-    },10); 
-    
-}
-
-function makeItRainFour(){
-    
-  var candy = document.createElement("img");
-    var mleft = Math.round(Math.random()*100);
-    var mdim = Math.round(Math.random()*40)+10;
-    
-    candy.src = "svgs/box.svg";
-    candy.className = "candies";
-    candy.style.left = mleft+"%";
-    candy.style.height = mdim+"px";
-    candy.style.width = mdim+"px";
-    
-    dispDiv.appendChild(candy);
-    
-    if(mdim > 40){
-        candy.style.transition = "top 10s";
-    }else if (mdim > 30){
-        candy.style.transition = "top 11s";
-    } else if (mdim > 20){
-        candy.style.transition = "top 12s";
-    }else {
-        candy.style.transition = "top 13s";
-    }
-    
-    setTimeout(function(){
-        candy.style.top = "55%";
-        
-        setTimeout (function(){
-            dispDiv.removeChild(candy);
-        },10000);
-    },10); 
-    
-}
-
-function notEnoughCandy(){
-    makeItRain();
-    makeItRainTwice();
-    makeItRainTrice();
-    makeItRainFour();
-}
-
-
-var timer = null;
-document.getElementById("start").addEventListener("click", function() {
-
- timer = setInterval(notEnoughCandy, 500);   
-    
-notEnoughCandy();
-    
-});
-
-
-document.getElementById("stop").addEventListener("click", function(){
-    clearInterval(timer);
-});
+//var dispDiv = document.getElementById("wrap"),
+//    start = document.getElementById("start"),
+//    stop = document.getElementById("stop");
+//
+//var max = 3;
+//var min = 1;
+//
+//function makeItRain(){
+//
+//    
+//  var candy = document.createElement("img");
+//    var mleft = Math.round(Math.random()*100);
+//    var mdim = Math.round(Math.random()*40)+10;
+//    Math.floor(Math.random() * 3) + 1;
+//    
+//    
+//    candy.src = "svgs/paper.svg";
+//    
+//    candy.className = "candies";
+//    candy.style.left = mleft+"%";
+//    candy.style.height = mdim+"px";
+//    candy.style.width = mdim+"px";
+//    
+//    dispDiv.appendChild(candy);
+//    
+//    if(mdim > 40){
+//        candy.style.transition = "top 10s";
+//    }else if (mdim > 30){
+//        candy.style.transition = "top 11s";
+//    } else if (mdim > 20){
+//        candy.style.transition = "top 12s";
+//    }else {
+//        candy.style.transition = "top 13s";
+//    }
+//    
+//    setTimeout(function(){
+//        candy.style.top = "55%";
+//        
+//        setTimeout (function(){
+//            dispDiv.removeChild(candy);
+//        },10000);
+//    },10); 
+//    
+//}
+//
+//function makeItRainTwice(){
+//    
+//  var candy = document.createElement("img");
+//    var mleft = Math.round(Math.random()*100);
+//    var mdim = Math.round(Math.random()*40)+10;
+//    
+//    candy.src = "svgs/bottle.svg";
+//    candy.className = "candies";
+//    candy.style.left = mleft+"%";
+//    candy.style.height = mdim+"px";
+//    candy.style.width = mdim+"px";
+//    
+//    dispDiv.appendChild(candy);
+//    
+//    if(mdim > 40){
+//        candy.style.transition = "top 14s";
+//    }else if (mdim > 30){
+//        candy.style.transition = "top 15s";
+//    } else if (mdim > 20){
+//        candy.style.transition = "top 16s";
+//    }else {
+//        candy.style.transition = "top 17s";
+//    }
+//    
+//    setTimeout(function(){
+//        candy.style.top = "55%";
+//        
+//        setTimeout (function(){
+//            dispDiv.removeChild(candy);
+//        },10000);
+//    },10); 
+//    
+//}
+//
+//function makeItRainTrice(){
+//    
+//  var candy = document.createElement("img");
+//    var mleft = Math.round(Math.random()*100);
+//    var mdim = Math.round(Math.random()*40)+10;
+//    
+//    candy.src = "svgs/banana.svg";
+//    candy.className = "candies";
+//    candy.style.left = mleft+"%";
+//    candy.style.height = mdim+"px";
+//    candy.style.width = mdim+"px";
+//    
+//    dispDiv.appendChild(candy);
+//    
+//    if(mdim > 40){
+//        candy.style.transition = "top 9s";
+//    }else if (mdim > 30){
+//        candy.style.transition = "top 10s";
+//    } else if (mdim > 20){
+//        candy.style.transition = "top 11s";
+//    }else {
+//        candy.style.transition = "top 12s";
+//    }
+//    
+//    setTimeout(function(){
+//        candy.style.top = "55%";
+//        
+//        setTimeout (function(){
+//            dispDiv.removeChild(candy);
+//        },10000);
+//    },10); 
+//    
+//}
+//
+//function makeItRainFour(){
+//    
+//  var candy = document.createElement("img");
+//    var mleft = Math.round(Math.random()*100);
+//    var mdim = Math.round(Math.random()*40)+10;
+//    
+//    candy.src = "svgs/box.svg";
+//    candy.className = "candies";
+//    candy.style.left = mleft+"%";
+//    candy.style.height = mdim+"px";
+//    candy.style.width = mdim+"px";
+//    
+//    dispDiv.appendChild(candy);
+//    
+//    if(mdim > 40){
+//        candy.style.transition = "top 10s";
+//    }else if (mdim > 30){
+//        candy.style.transition = "top 11s";
+//    } else if (mdim > 20){
+//        candy.style.transition = "top 12s";
+//    }else {
+//        candy.style.transition = "top 13s";
+//    }
+//    
+//    setTimeout(function(){
+//        candy.style.top = "55%";
+//        
+//        setTimeout (function(){
+//            dispDiv.removeChild(candy);
+//        },10000);
+//    },10); 
+//    
+//}
+//
+//function notEnoughCandy(){
+//    makeItRain();
+//    makeItRainTwice();
+//    makeItRainTrice();
+//    makeItRainFour();
+//}
+//
+//
+//var timer = null;
+//document.getElementById("start").addEventListener("click", function() {
+//
+// timer = setInterval(notEnoughCandy, 500);   
+//    
+//notEnoughCandy();
+//    
+//});
+//
+//
+//document.getElementById("stop").addEventListener("click", function(){
+//    clearInterval(timer);
+//});

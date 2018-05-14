@@ -1,14 +1,14 @@
 var howard = document.getElementById("howard"),
-    clowds = document.getElementById("clowds"),
-    baloon5 = document.getElementById("baloon5"),
+    clouds = document.getElementById("clouds"),
+    balloon5 = document.getElementById("balloon5"),
     mysubmit = document.getElementById("mysubmit");
 
 
-//clowds
+//clouds
 var num =-100;
 
 setInterval(function(){
-    clowds.style.left = num+"%";
+    clouds.style.left = num+"%";
     num=num+0.2;
     if(num>100){
         num = -100;

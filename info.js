@@ -7,17 +7,17 @@ var howard = document.getElementById("howard"),
     info5 = document.getElementById("info5"),
     back = document.getElementById("back"),
     forward = document.getElementById("forward"),
-    baloon4 = document.getElementById("baloon4"),
+    balloon4 = document.getElementById("balloon4"),
     bgItems = document.getElementById("bgItems"),
     infoBox = document.getElementById("infoBox"),
     howardPoked = document.getElementById("howardPoked");
 
 
-//clowds
+//clouds
 var num =-100;
 
 setInterval(function(){
-    clowds.style.left = num+"%";
+    clouds.style.left = num+"%";
     num=num+0.2;
     if(num>100){
         num = -100;
@@ -25,9 +25,8 @@ setInterval(function(){
 },30);
 
 
-//info baloons
-
-        baloon3.style.display = "block"; 
+//info balloons
+        balloon3.style.display = "block"; 
         forward.style.display = "block";
 
 
@@ -54,8 +53,8 @@ howard.addEventListener("click", function(){
 
     
 forward.addEventListener("click", function(){
-   if (baloon3.style.display == "block"){
-          baloon3.style.display = "none"; 
+   if (balloon3.style.display == "block"){
+          balloon3.style.display = "none"; 
     info1.style.display = "block";
     back.style.display = "block";
     forward.style.display = "block";
@@ -74,14 +73,32 @@ forward.addEventListener("click", function(){
        info5.style.display = "block";
    } else if (info5.style.display == "block"){
        info5.style.display = "none";
-       baloon4.style.display = "block";
+       info6.style.display = "block";
+   } else if (info6.style.display == "block"){
+       info6.style.display = "none";
+       info7.style.display = "block";
+   } else if (info7.style.display == "block"){
+       info7.style.display = "none";
+       info8.style.display = "block";
+   } else if (info8.style.display == "block"){
+       info8.style.display = "none";
+       balloon4.style.display = "block";
        forward.style.display = "none";
    }
 });
 
 
 back.addEventListener("click", function(){
-   if(info5.style.display == "block"){
+   if(info8.style.display == "block"){
+       info8.style.display = "none";
+       info7.style.display = "block";
+   } else if (info7.style.display == "block"){
+       info7.style.display = "none";
+       info6.style.display = "block";
+   } else if (info6.style.display == "block"){
+       info6.style.display = "none";
+       info5.style.display = "block";
+   } else if (info5.style.display == "block"){
        info5.style.display = "none";
        info4.style.display = "block";
    } else if (info4.style.display == "block"){
@@ -96,15 +113,15 @@ back.addEventListener("click", function(){
    } else if (info1.style.display == "block"){
        info1.style.display = "none";
        info5.style.display = "block";
-   } else if (baloon4.style.display == "block"){
-       baloon4.style.display = "none";
+   } else if (balloon4.style.display == "block"){
+       balloon4.style.display = "none";
        info1.style.display = "block";
        forward.style.display = "block";
    } 
 });
 
-baloon4.addEventListener("click", function(){
-    baloon4.style.display = "none";
+balloon4.addEventListener("click", function(){
+    balloon4.style.display = "none";
     back.style.display = "none";
 });
 

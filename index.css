@@ -56,8 +56,8 @@ li a {
 
 #homeB{
     left:23.5%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign1{
@@ -66,8 +66,8 @@ li a {
 
 #infoB{
     left:39%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign2{
@@ -76,8 +76,8 @@ li a {
 
 #gameB{
     left:53%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign3{
@@ -86,8 +86,8 @@ li a {
 
 #bcB{
     left:68%;
-    top:10%;
-    z-index:5;
+    top:7%;
+    z-index:20;
 }
 
 #sign4{
@@ -96,7 +96,7 @@ li a {
 }
 
 
-#baloon{
+#balloon{
     border-radius:20px;
     cursor: pointer;
     font-family:quicksand;
@@ -116,7 +116,7 @@ li a {
     z-index:2;
 }
 
-#baloon2{
+#balloon2{
     border-radius:20px;
     cursor: pointer;
     font-family:quicksand;
@@ -166,7 +166,7 @@ li a {
     display:none;
 }
 
-#clowds{
+#clouds{
     position:absolute;
     left:0px;
 }

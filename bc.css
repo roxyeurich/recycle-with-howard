@@ -59,8 +59,8 @@ body{
 
 #homeB{
     left:23.5%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign1{
@@ -69,8 +69,8 @@ body{
 
 #infoB{
     left:39%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign2{
@@ -79,8 +79,8 @@ body{
 
 #gameB{
     left:53%;
-    top:11%;
-    z-index:5;
+    top:7.5%;
+    z-index:20;
 }
 
 #sign3{
@@ -89,8 +89,8 @@ body{
 
 #bcB{
     left:68%;
-    top:10%;
-    z-index:5;
+    top:7%;
+    z-index:20;
 }
 
 #sign4{
@@ -121,7 +121,7 @@ input{
     z-index:16;
 }
 
-#baloon6{
+#balloon6{
     font-family:quicksand;
     font-size:15px;
     position:absolute;
@@ -170,7 +170,7 @@ input{
     top:70vh;
 }
 
-#clowds{
+#clouds{
     position:absolute;
     left:0px;
 }

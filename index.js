@@ -1,15 +1,15 @@
 var howard = document.getElementById("howard");
-var baloon = document.getElementById("baloon");
-var baloon2 = document.getElementById("baloon2");
-var clowds = document.getElementById("clowds");
+var balloon = document.getElementById("balloon");
+var balloon2 = document.getElementById("balloon2");
+var clouds = document.getElementById("clouds");
 
 
 
-//clowds
+//clouds
 var num =-100;
 
 setInterval(function(){
-    clowds.style.left = num+"%";
+    clouds.style.left = num+"%";
     num=num+0.2;
     if(num>100){
         num = -100;
@@ -18,15 +18,15 @@ setInterval(function(){
 
 
 //speaking
-baloon.style.display = "block";
+balloon.style.display = "block";
 
-baloon.addEventListener("click", function(){
-    baloon.style.display = "none";
-   baloon2.style.display = "block";
+balloon.addEventListener("click", function(){
+    balloon.style.display = "none";
+   balloon2.style.display = "block";
 });
 
-baloon2.addEventListener("click", function(){
-   baloon2.style.display = "none";
+balloon2.addEventListener("click", function(){
+   balloon2.style.display = "none";
 });
 
 

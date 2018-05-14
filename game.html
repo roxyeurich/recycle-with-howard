@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="game.css">
         <title>Recycle with Howard</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     </head>
     
     <body>
@@ -19,7 +20,7 @@
         
         <div id="points"></div>
 
-<div id="baloon5"><b>Game instructions:</b> <br><br>
+<div id="balloon5"><b>Game instructions:</b> <br><br>
     
 1.  Click on howard to move him around.<br><br>
             
@@ -36,27 +37,32 @@
 </div>
         <div id="controls">
             <div id="start">Start</div>
-            <div id="stop">Stop</div>
             
         </div>
 
         <div id="wrap">
+            <img src="svgs/howard.svg" id="howard"/> 
         </div>
-<div id="baloonWin">You've earned a point! <br><br>
+<div id="balloonWin">You've earned a point! <br><br>
     Keep going to make the world a better place. :3 <br><br>
     You have a total of:&nbsp;<input id="pts" type="number" readonly/> &nbsp; points.</div>
         
-<div id="baloonAlert">If you are having trouble finding the right bin, you can go back to the Info page and study a little more.</div>
+<div id="balloonAlert">If you are having trouble finding the right bin, you can go back to the Info page and study a little more.</div>
         
         <div id="myreset">Reset</div>
         
 <!--gamePage-->
 <img id="cursorChange"/>
 <img src="svgs/paper.svg" class="items" id="paper"/>
-<img src="svgs/jam.svg" class="items" id="jam"/>
 <img src="svgs/box.svg" class="items" id="box"/>
 <img src="svgs/banana.svg" class="items" id="banana"/>
 <img src="svgs/bottle.svg" class="items" id="bottle"/>
+<img src="svgs/apple.svg" class="items" id="apple"/>
+<img src="svgs/duckling.svg" class="items" id="duckling"/>
+<img src="svgs/pen.svg" class="items" id="pen"/>
+<img src="svgs/toothpaste.svg" class="items" id="toothpaste"/>
+
+
 
 <img src="svgs/blackBin.svg" class="bins" id="blackBin"/>
 <img src="svgs/greenBin.svg" class="bins" id="greenBin"/>
@@ -65,10 +71,9 @@
 
 <img src="svgs/logo.svg" id="logo"/>
 
-   <img src="svgs/howard.svg" id="howard"/> 
 
 
-<img src="svgs/clowds.svg" id="clowds"/>
+<img src="svgs/clouds.svg" id="clouds"/>
 <img src="svgs/Background.svg" id="background"/>
         
         <script src="game.js"></script>
