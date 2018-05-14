@@ -144,19 +144,29 @@ li a {
 #howard{
     cursor: pointer;
     position:absolute;
-    width:500px;
+    width:400px;
+    height:auto;
+    z-index:10;
+    top:55vh;
+    left:0px;
+    right:0px;
+    margin:auto;  
+}
+
+#howardPoked{
+    cursor: pointer;
+    position:absolute;
+    width:550px;
+    height:auto;
     z-index:10;
     top:50vh;
-    right:0px;
     left:0px;
-    margin:auto;
+    right:0px;
+    margin:auto; 
+    display:none;
 }
 
-#clowds, #clowds2{
+#clowds{
     position:absolute;
-    transition: 10s;
-}
-
-#clowd2{
-    left:-200px;
+    left:0px;
 }

@@ -113,6 +113,7 @@ li a {
     position:absolute;
     top:25vh;
     display:none;
+    
 }
 
 #back{
@@ -125,6 +126,7 @@ li a {
     position:absolute;
     top:25vh;
     display:none;
+    
     
 }
 
@@ -210,12 +212,25 @@ li a {
     cursor: pointer;
     position:absolute;
     width:400px;
+    height:auto;
     z-index:10;
     top:55vh;
     left:0px;
     right:0px;
-    margin:auto;
-    
+    margin:auto;  
+}
+
+#howardPoked{
+    cursor: pointer;
+    position:absolute;
+    width:550px;
+    height:auto;
+    z-index:10;
+    top:50vh;
+    left:0px;
+    right:0px;
+    margin:auto; 
+    display:none;
 }
 
 #clowds{

@@ -8,7 +8,10 @@ var howard = document.getElementById("howard"),
     back = document.getElementById("back"),
     forward = document.getElementById("forward"),
     baloon4 = document.getElementById("baloon4"),
-    bgItems = document.getElementById("bgItems");
+    bgItems = document.getElementById("bgItems"),
+    infoBox = document.getElementById("infoBox"),
+    howardPoked = document.getElementById("howardPoked");
+
 
 //clowds
 var num =-100;
@@ -23,9 +26,30 @@ setInterval(function(){
 
 
 //info baloons
+
+        baloon3.style.display = "block"; 
+        forward.style.display = "block";
+
+
+//howard poke
+var howardSound = new Audio('audio/howardSound.mp3');
+
 howard.addEventListener("click", function(){
-   baloon3.style.display = "block"; 
-    forward.style.display = "block";
+    poke();
+    
+    function poke(){   
+        
+                howardPoked.style.display = "block";
+                howard.style.display = "none";
+                howardSound.play();
+                howardSound.volume = 0.2;
+            setTimeout(function() {
+                howardPoked.style.display = "none";
+                howard.style.display = "block";
+            }, 250);
+            }
+
+    
 });    
 
     

@@ -172,7 +172,6 @@ input{
 
 #clowds{
     position:absolute;
-    transition: left 10s;
-
+    left:0px;
 }
 
