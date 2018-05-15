@@ -121,6 +121,26 @@ li a {
     z-index:15;
 }
 
+#balloonPts{
+       cursor: pointer;
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:15px;
+    position:absolute;
+    display:none;
+    width:400px;
+    height:100px;
+    padding:30px;
+    top:20vh;
+    left:0;
+    right:0;
+    margin:auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    z-index:15; 
+}
+
 #balloonAlert{
     cursor: pointer;
     border-radius:20px;
@@ -141,6 +161,26 @@ li a {
     z-index:15;
 }
 
+#balloonVictory{
+    cursor: pointer;
+    border-radius:20px;
+    cursor: pointer;
+    font-family:quicksand;
+    font-size:15px;
+    position:absolute;
+    display:none;
+    width:380px;
+    height:150px;
+    padding:30px;
+    top:20vh;
+    left:0;
+    right:0;
+    margin:auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    z-index:15;
+    text-align: center;
+}
 
 #howard{
     cursor: pointer;
@@ -260,26 +300,6 @@ li a {
     transition-timing-function: linear;
 }
 
-
-#balloonWin{
-       cursor: pointer;
-    border-radius:20px;
-    cursor: pointer;
-    font-family:quicksand;
-    font-size:15px;
-    position:absolute;
-    display:none;
-    width:400px;
-    height:100px;
-    padding:30px;
-    top:20vh;
-    left:0;
-    right:0;
-    margin:auto;
-    background-color:rgba(255, 255, 255, 0.5);
-    color:black;
-    z-index:15; 
-}
 
 
 /*rain*/

@@ -18,7 +18,9 @@ var howard = document.getElementById("howard"),
     apple = document.getElementById("apple"),
     duckling = document.getElementById("duckling"),
     pen = document.getElementById("pen"),
-    toothpaste = document.getElementById("toothpaste");
+    toothpaste = document.getElementById("toothpaste"),
+    balloonPts = document.getElementById("balloonPts"),
+    balloonVictory = document.getElementById("balloonVictory");
 
 
 //intro balloon
@@ -69,7 +71,7 @@ function takeItem(el){
     cursor.style.display = "block";
 }
 
-//matching items to bin
+//picking item and matching items to bin
 bottle.addEventListener("click", function(){
    takeItem(this);
     itemName = blueBin;
@@ -88,7 +90,6 @@ paper.addEventListener("click", function(){
     paper.style.display = "none";
 });
 
-//change jam for smt else later
 duckling.addEventListener("click", function(){
    takeItem(this);
     itemName = blackBin;
@@ -119,7 +120,7 @@ box.addEventListener("click", function(){
     box.style.display = "none";
 });
 
-
+//pick up item with cursor
 document.body.addEventListener("mousemove", function(ev){
         cursor.style.left = ev.pageX-45+"px";
         cursor.style.top = ev.pageY-45+"px"; 
@@ -135,13 +136,20 @@ function pickBin(bname){
         cursor.style.display = "none";
         points++;
         console.log(points);
-        balloonWin.style.display = "block";
+        balloonPts.style.display = "block";
         pts.value = points;
         disposingGarb();
         trashSound.play();
         trashSound.volume = 0.3;
+        
         if (balloon5.style.display == "block"){
             balloon5.style.display = "none";  
+        } else if(balloonVictory.style.display == "block"){
+            balloonPts.style.display = "none";
+        }
+        
+        if (pts.value == "7"){
+            balloonVictory.style.display = "block";
         }
         
         
@@ -158,19 +166,34 @@ function pickBin(bname){
         noPts++;
     }
     
-    if (noPts > 5){
-        balloonAlert.style.display = "block";
+    if (noPts > 4){
+        
+        if(balloon5.style.display == "block"){
+            balloon5.style.display = "none"; 
+            balloonAlert.style.display = "block"; 
+        } else {
+            balloonAlert.style.display = "block";
+        }
+        
+        if (balloonPts.style.display == "block"){
+            balloonAlert.style.display = "none";
+        }
     }
 
 }
 
+
+//Victory
+balloonVictory.addEventListener("click", function(){
+    balloonVictory.style.display = "none";
+});
 //balloonAlert
 balloonAlert.addEventListener("click", function(){
     balloonAlert.style.display = "none";
 });
 //pts balloon
-balloonWin.addEventListener("click", function(){
-    balloonWin.style.display = "none";
+balloonPts.addEventListener("click", function(){
+    balloonPts.style.display = "none";
 });
 //clickable bins
 blackBin.addEventListener("click", function(){
@@ -198,10 +221,10 @@ document.body.addEventListener("mousemove", function(ev){
 });          
 });
     
-
+//dropping items
 start.addEventListener("click", function(){
 
-function dropPaper(){
+    function dropPaper(){
 
     paper.style.transform = "translateY(1050px)";
     
@@ -255,7 +278,7 @@ setTimeout(function(){
     setInterval(dropPen, 16000);     
     
   
-        function dropDuck(){
+    function dropDuck(){
 
     duckling.style.transform = "translateY(1100px)";
     
@@ -266,8 +289,7 @@ setTimeout(function(){
     setInterval(dropDuck, 18000);  
     
 
-  
-        function dropApple(){
+    function dropApple(){
 
     apple.style.transform = "translateY(1100px)";
     
@@ -278,7 +300,7 @@ setTimeout(function(){
     setInterval(dropApple, 20000); 
     
     
-        function dropTube(){
+    function dropTube(){
 
     toothpaste.style.transform = "translateY(1100px)";
     

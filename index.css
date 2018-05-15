@@ -3,7 +3,10 @@ FirstPage{
     max-height: 959px;
 }
 
-
+#clouds{
+    position:absolute;
+    left:0px;
+}
 
 #logo{
     width:15%;
@@ -103,6 +106,7 @@ li a {
 }
 
 
+/*balloons*/
 
 #balloon{
     border-radius:20px;
@@ -122,9 +126,10 @@ li a {
     background-color:rgba(255, 255, 255, 0.5);
     color:black;
     z-index:2;
+    text-align: center;
 }
 
-#balloon2{
+#balloon2, #balloon3, #balloon4, #balloonVictory{
     border-radius:20px;
     cursor: pointer;
     font-family:quicksand;
@@ -132,7 +137,7 @@ li a {
     position:absolute;
     display:none;
     width:300px;
-    height:40px;
+    height:120px;
     padding:50px;
     top:-20vh;
     left:0px;
@@ -141,7 +146,10 @@ li a {
     margin:auto;
     background-color:rgba(255, 255, 255, 0.7);
     z-index:2;
+    text-align: center;
 }
+
+
 
 .ground{
     width:100vw;
@@ -164,6 +172,7 @@ li a {
 #howardPoked{
     cursor: pointer;
     position:absolute;
+    display:none;
     width:550px;
     height:auto;
     z-index:10;
@@ -174,7 +183,72 @@ li a {
     display:none;
 }
 
-#clouds{
+#howardOpenArms{
+    cursor: pointer;
     position:absolute;
+    display:none;
+    width:900px;
+    height:auto;
+    z-index:10;
+    top:55vh;
     left:0px;
+    right:0px;
+    margin:auto;  
 }
+
+/* items */
+
+.items {
+    position:absolute;
+    z-index:15;
+}
+
+#paper{
+    top:1000px;
+    width:60px;
+    left:10%; 
+}
+
+#box{
+    top:1200px;
+    width:150px;
+   left:20%;
+}
+
+#banana{
+    top:1150px;
+    width:70px;
+    left:35%; 
+}
+
+#bottle{
+    top:1250px;
+    width:90px;
+    left:50%; 
+}
+
+#apple{
+    top:1150px;
+    width:60px;
+    left:60%; 
+}
+
+#duckling{
+    top:1200px;
+    width:90px;
+    left:70%; 
+}
+
+#pen{
+    top:1250px;
+    width:80px;
+    left:80%; 
+}
+
+#toothpaste{
+    top:1150px;
+    width:90px;
+    left:8%; 
+}
+
+
