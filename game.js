@@ -142,7 +142,7 @@ function pickBin(bname){
         trashSound.play();
         trashSound.volume = 0.3;
         
-        if (balloon5.style.display == "block"){
+        if (balloonPts.style.display == "block"){
             balloon5.style.display = "none";  
         } else if(balloonVictory.style.display == "block"){
             balloonPts.style.display = "none";
