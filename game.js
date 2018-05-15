@@ -20,7 +20,8 @@ var howard = document.getElementById("howard"),
     pen = document.getElementById("pen"),
     toothpaste = document.getElementById("toothpaste"),
     balloonPts = document.getElementById("balloonPts"),
-    balloonVictory = document.getElementById("balloonVictory");
+    balloonVictory = document.getElementById("balloonVictory"),
+    wrap = document.getElementById("wrap");
 
 
 //intro balloon
@@ -72,6 +73,13 @@ function takeItem(el){
 }
 
 //picking item and matching items to bin
+paper.addEventListener("click", function(){
+   takeItem(this);
+    itemName = yellowBin;
+    
+    paper.style.display = "none";
+});
+
 bottle.addEventListener("click", function(){
    takeItem(this);
     itemName = blueBin;
@@ -83,12 +91,6 @@ toothpaste.addEventListener("click", function(){
     itemName = blueBin;
     toothpaste.style.display = "none";
 }); 
-
-paper.addEventListener("click", function(){
-   takeItem(this);
-    itemName = yellowBin;
-    paper.style.display = "none";
-});
 
 duckling.addEventListener("click", function(){
    takeItem(this);
@@ -141,6 +143,7 @@ function pickBin(bname){
         disposingGarb();
         trashSound.play();
         trashSound.volume = 0.3;
+        itemName = "";
         
         balloon5.style.display = "none";
         balloonPts.style.display = "block";
@@ -149,8 +152,8 @@ function pickBin(bname){
 
         
         if (pts.value == "8"){
-            balloonVictory.style.display = "block";
             balloonPts.style.display = "none";
+            balloonVictory.style.display = "block";
             victorySound.play();
             victorySound.volume = 0.3;
             
@@ -218,12 +221,20 @@ blueBin.addEventListener("click", function(){
 
 
 //howard move mouse
-howard.addEventListener("click", function(){
-    document.body.addEventListener("mousemove", function(ev){
+wrap.addEventListener("mousemove", function(ev){
+
         howard.style.left = ev.pageX-130+"px";
-        howard.style.top = ev.pageY-320+"px";  
-    });          
+        howard.style.top = ev.pageY-930+"px";  
+       
 });
+
+////drop howard
+//wrap.addEventListener("mouseleave", function(){
+//    
+//    howard.style.top = ev.pageY+"px";
+//    howard.style.left = ev.pageX+"px"; 
+//
+//});
     
 //dropping items
 start.addEventListener("click", function(){
@@ -273,10 +284,10 @@ setTimeout(function(){
     
     function dropPen(){
 
-    pen.style.transform = "translateY(1100px)";
+    pen.style.transform = "translateY(1000px)";
     
 setTimeout(function(){
-    pen.style.transform = "translateY(1100px)";
+    pen.style.transform = "translateY(1000px)";
 }, 2000); 
     }
     setInterval(dropPen, 16000);     
@@ -306,10 +317,10 @@ setTimeout(function(){
     
     function dropTube(){
 
-    toothpaste.style.transform = "translateY(1100px)";
+    toothpaste.style.transform = "translateY(1000px)";
     
 setTimeout(function(){
-    toothpaste.style.transform = "translateY(1100px)";
+    toothpaste.style.transform = "translateY(1000px)";
 }, 2000); 
     }
     setInterval(dropTube, 22000);  

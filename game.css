@@ -186,7 +186,7 @@ li a {
     cursor: pointer;
     position:absolute;
     width:300px;
-    top:40%;
+    top:-30%;
     left:35%;
     margin:auto;
     z-index:13;
@@ -238,7 +238,7 @@ li a {
     position:fixed;
     top:-20%;
     z-index:15;
-    padding:5px;
+    padding:20px;
 }
 
 
@@ -305,12 +305,13 @@ li a {
 /*rain*/
 
 #wrap{
-    position:fixed;
-    left:0;
-    top:10vh;
-    width:95vw;
-    height:95vh;
+    position:absolute;
+    left:1%;
+    bottom:0;
+    width:96vw;
+    height:35%;
     z-index:12;
+    border: 2px solid transparent;
 }
 
 /*
