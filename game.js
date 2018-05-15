@@ -130,6 +130,7 @@ document.body.addEventListener("mousemove", function(ev){
 
 //matching bin
 var trashSound = new Audio('audio/trashSound.mp3');
+var victorySound = new Audio('audio/victorySound.mp3');
 
 function pickBin(bname){
     if(itemName == bname){
@@ -150,16 +151,19 @@ function pickBin(bname){
         if (pts.value == "8"){
             balloonVictory.style.display = "block";
             balloonPts.style.display = "none";
+            victorySound.play();
+            victorySound.volume = 0.3;
+            
         }
         
-        
-            function disposingGarb(){    
+
+        function disposingGarb(){    
             bname.style.transform = "scale(1.5)";
-                
+
             setTimeout(function() {
                 bname.style.transform = "scale(1)";
             }, 250);
-            }
+        }
 
         
     } else {
@@ -215,10 +219,10 @@ blueBin.addEventListener("click", function(){
 
 //howard move mouse
 howard.addEventListener("click", function(){
-document.body.addEventListener("mousemove", function(ev){
+    document.body.addEventListener("mousemove", function(ev){
         howard.style.left = ev.pageX-130+"px";
         howard.style.top = ev.pageY-320+"px";  
-});          
+    });          
 });
     
 //dropping items
