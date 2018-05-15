@@ -122,7 +122,7 @@ input{
 
 #mysubmit{
     position:absolute;
-    top:37vh;
+    top:65%;
     left:50px;
     padding:10px;
     border-radius:20px;
@@ -139,9 +139,9 @@ input{
     position:absolute;
     display:block;
     width:500px;
-    height:500px;
+    height:430px;
     padding:20px;
-    top:22vh;
+    top:18vh;
     left:0;
     right:0;
     margin:auto;
@@ -168,10 +168,10 @@ input{
 
 #piggy{
     position:absolute;
-    top:45vh;
+    top:70%;
     width:120px;
     z-index:20; 
-    left:400px;
+    left:350px;
     transition:0.3s;
 }
 
@@ -181,7 +181,7 @@ input{
     width:300px;
     z-index:10;
     left:35vw;
-    top:70vh;
+    top:60%;
 }
 
 #clouds{
