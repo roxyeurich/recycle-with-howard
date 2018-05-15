@@ -136,20 +136,20 @@ function pickBin(bname){
         cursor.style.display = "none";
         points++;
         console.log(points);
-        balloonPts.style.display = "block";
         pts.value = points;
         disposingGarb();
         trashSound.play();
         trashSound.volume = 0.3;
         
-        if (balloonPts.style.display == "block"){
-            balloon5.style.display = "none";  
-        } else if(balloonVictory.style.display == "block"){
-            balloonPts.style.display = "none";
-        }
+        balloon5.style.display = "none";
+        balloonPts.style.display = "block";
         
-        if (pts.value == "7"){
+        
+
+        
+        if (pts.value == "8"){
             balloonVictory.style.display = "block";
+            balloonPts.style.display = "none";
         }
         
         
