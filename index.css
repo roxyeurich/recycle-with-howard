@@ -149,6 +149,8 @@ li a {
     text-align: center;
 }
 
+
+
 #howard{
     cursor: pointer;
     position:absolute;
@@ -196,51 +198,51 @@ li a {
 }
 
 #paper{
-    top:88%;
+    top:1000px;
     width:60px;
     left:10%; 
 }
 
 #box{
-    top:90%;
+    top:1200px;
     width:150px;
    left:20%;
 }
 
 #banana{
-    top:90%;
+    top:1150px;
     width:70px;
     left:35%; 
 }
 
 #bottle{
-    top:90%;
+    top:1250px;
     width:90px;
     left:50%; 
 }
 
 #apple{
-    top:90%;
+    top:1150px;
     width:60px;
     left:60%; 
 }
 
 #duckling{
-    top:90%;
+    top:1200px;
     width:90px;
     left:70%; 
 }
 
 #pen{
-    top:90%;
+    top:1250px;
     width:80px;
     left:80%; 
 }
 
 #toothpaste{
-    top:89%;
+    top:1150px;
     width:90px;
-    left:15%; 
+    left:8%; 
 }
 
 
