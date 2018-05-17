@@ -3,7 +3,15 @@ FirstPage{
     max-height: 959px;
 }
 
+body{
+    overflow:hidden;
+}
 
+#clouds{
+    position:absolute;
+    transition: left 10s;
+
+}
 
 #logo{
     width:15%;
@@ -243,10 +251,4 @@ li a {
     right:0;
     margin:auto; 
     display:none;
-}
-
-#clouds{
-    position:absolute;
-    transition: left 10s;
-
 }

@@ -65,7 +65,8 @@ mysubmit.addEventListener("click", function(){
     var g2lCalc = (g2l.value)*(0.30);
     var g1lCalc = (g1l.value)*(0.25);
     
-    var Calculation = Math.round((p2lCalc+p1lCalc+cansCalc+g2lCalc+g1lCalc)*100)/100;
+    var CalcOne = Math.round((p2lCalc+p1lCalc+cansCalc+g2lCalc+g1lCalc)*100)/100;
+   var Calculation = CalcOne.toFixed(2);
     tPrice.value = Calculation;
     
     

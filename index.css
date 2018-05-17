@@ -3,6 +3,10 @@ FirstPage{
     max-height: 959px;
 }
 
+body{
+    overflow:hidden;
+}
+
 #clouds{
     position:absolute;
     left:0px;

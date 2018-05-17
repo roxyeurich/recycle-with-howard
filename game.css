@@ -3,11 +3,25 @@ FirstPage{
     max-height: 959px;
 }
 
+body{
+    overflow:hidden;
+}
+
+
+#clouds{
+    position:absolute;
+    left:0px;
+}
+
 #logo{
     width:15%;
     position:absolute;
     margin:10px;
     z-index:10;
+}
+
+body{
+    overflow:hidden;
 }
 
 /*NAV BAR*/
@@ -192,10 +206,6 @@ li a {
     z-index:13;
 }
 
-#clouds{
-    position:absolute;
-    left:0px;
-}
 
 #cursorChange{
     width:50px;
