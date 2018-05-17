@@ -224,7 +224,7 @@ blueBin.addEventListener("click", function(){
 wrap.addEventListener("mousemove", function(ev){
 
         howard.style.left = ev.pageX-130+"px";
-        howard.style.top = ev.pageY-930+"px";  
+        howard.style.top = ev.pageY-800+"px";  
        
 });
 
