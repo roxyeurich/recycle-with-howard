@@ -7,3 +7,5 @@ Open the app by the landing.html
 or use the link:
 
 https://roxyeurich.github.io/recycling-with-howard/landing.html
+
+Thank you Aimee & Henry, for all the help and incentive.
